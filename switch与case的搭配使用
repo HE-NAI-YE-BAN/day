@@ -4,7 +4,7 @@ int main()
 {
 	int day = 0;
 	scanf("%d", &day);
-	switch (day)//switch(整形表达式)与case（整形）的搭配使用
+	switch (day)//switch(整形表达式)与case（常量整形）的搭配使用
 	{
 	case 1:
 		printf("星期一\n"); break;
