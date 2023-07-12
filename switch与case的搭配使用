@@ -20,9 +20,11 @@ int main()
 		printf("星期六\n"); break;
 	case 7:
 		printf("星期七\n"); break;//最后一个break最好加上
+        default：//default可以省略，作用域内没有位置限制，但最好放在末尾
+                printf("输入错误\n");break;
 	}//case决定入口，break决定出口
 
-	switch (day)
+	switch (day)//可以与if语句嵌套，也可自我嵌套
 	{
 	case 1: 
 	case 2:
@@ -33,6 +35,8 @@ int main()
 	case 6:
 	case 7:
 		printf("休息日\n"); break;
+        default：
+                printf("输入错误\n");break;
 	}//case后面不一定要break
 	return 0;
 }
