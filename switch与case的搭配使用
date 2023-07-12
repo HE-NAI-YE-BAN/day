@@ -19,7 +19,7 @@ int main()
 	case 6:
 		printf("星期六\n"); break;
 	case 7:
-		printf("星期七\n"); break;
+		printf("星期七\n"); break;//最后一个break最好加上
 	}//case决定入口，break决定出口
 
 	switch (day)
