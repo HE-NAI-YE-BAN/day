@@ -1,0 +1,6 @@
+int main()
+{
+	int ch = getchar();
+	putchar(ch);//与printf("%c",ch)的作用相同
+	return 0;
+}//只能输出一个字符
