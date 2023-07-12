@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+	int i = 0;
+	int o = 0;
+	int p = 0;
+	int u = 0;
+	while (i <= 10)
+	{
+		printf("%d ", i);
+		i++;
+	}//打印0 1 2 3 4 5 6 7 8 9 10
+	printf("\n");
+
+	while (o <= 10)
+	{
+		o++;
+		printf("%d ", o);
+	}//打印1 2 3 4 5 6 7 8 9 10 11
+	printf("\n");
+
+	while (p <= 10)//与break搭配
+	{
+		p++;
+		if (p == 5)
+		{
+			break;
+		}
+		printf("%d ", p);
+	}//打印1 2 3 4
+	printf("\n");
+
+	while (u <= 10)//与continue搭配
+	{
+		u++;//位置改变会导致打印结果改变
+		if (u == 5)
+		{
+			continue;
+		}
+		printf("%d ", u);
+	}//打印1 2 3 4 6 7 8 9 10 11
+	printf("\n");
+
+	return 0;
+}
