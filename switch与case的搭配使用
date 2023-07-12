@@ -21,5 +21,18 @@ int main()
 	case 7:
 		printf("星期七\n"); break;
 	}//case决定入口，break决定出口
+
+	switch (day)
+	{
+	case 1: 
+	case 2:
+	case 3:
+        case 4:
+	case 5:
+		printf("工作日\n"); break;
+	case 6:
+	case 7:
+		printf("休息日\n"); break;
+	}//case后面不一定要break
 	return 0;
 }
