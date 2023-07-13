@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+   for(;;)//for循环的初始化、判断、调整都可以省略。但是如果省略判断部，会导致for循环恒为真
+   {
+      printf("h");
+   }
+}
