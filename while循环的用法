@@ -19,7 +19,7 @@ int main()
 	}//打印1 2 3 4 5 6 7 8 9 10 11
 	printf("\n");
 
-	while (p <= 10)//与break搭配
+	while (p <= 10)//与break搭配，用于跳出循环，与for循环中的作用相同
 	{
 		p++;
 		if (p == 5)
@@ -30,7 +30,7 @@ int main()
 	}//打印1 2 3 4
 	printf("\n");
 
-	while (u <= 10)//与continue搭配
+	while (u <= 10)//与continue搭配，用于跳过本次循环，与for循环中的作用相同
 	{
 		u++;//位置改变会导致打印结果改变
 		if (u == 5)
