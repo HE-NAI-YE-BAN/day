@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int ret = 0;
+	char password[] = { 0 };
+	printf("请输入密码：\n");
+	scanf("%s", password);//输入函数
+	getchar();//当缓冲区剩下“\n”时，用于读取“\n”，使缓冲区清空
+	while ((getchar()) != '\n')//用于清空缓冲区
+	{
+		;
+	}
+	printf("请确认（Y/N）：>");
+	ret = getchar();
+	if (ret == 'Y')
+	{
+		printf("确认成功");
+	}
+	else
+	{
+		printf("放弃确认");
+	}
+	return 0;
+}
