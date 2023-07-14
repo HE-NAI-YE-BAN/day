@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS//使scanf生效
+#include<stdio.h>
+#include<string.h>//使strcmp生效
+int main()
+{
+	int i = 0;
+	char password[] = {0};
+	for (i = 0; i < 3; i++)
+	{
+		printf("请输入密码：");
+		scanf("%s", password);
+		if (strcmp(password, "123456") == 0)//==不能用来比较两个字符串是否相等,应该使用一个库函数-strcmp
+			//“123456”为设置的密码
+		{
+			printf("登陆成功\n");
+			break;
+		}
+		else
+		{
+			printf("密码错误\n");
+		}
+	}
+	if (i == 3)
+	{
+		printf("密码已错误三次，退出程序");
+	}
+	return 0;
+}
